@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "372d4b8a-a8c2-43de-bbc4-7378c9656f65",
+		"name": "NODE_JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25446184",
+		"_collection_link": "https://www.postman.com/flight-engineer-51338686/workspace/mywoekspace/collection/25446184-372d4b8a-a8c2-43de-bbc4-7378c9656f65?action=share&source=collection_link&creator=25446184"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "changePassword",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "loggeduser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTUwNTQ5MjMsImV4cCI6MTY5NTQ4NjkyM30.QvvmWJRJPzZbDLCY5iBNpgYumunDdtbSKGfDsbwGRWU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/user/loggeduser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"loggeduser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emailpasswordresettoken",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "passwordresetviaemail",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
